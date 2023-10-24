@@ -1,12 +1,13 @@
 import React from 'react';
 import "./header.css"
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
       <div className="header">
-        <button className="btn">Home</button>
-        <button className="btn">Video</button>
-        <button className="btn">Pictures</button>
+          <Link to = "/videos"><button className="btn">Video</button> </Link> 
+          <Link to = "/pictures"><button className="btn">Pictures</button> </Link> 
+          <Link to = "/"><button className="btn">Home</button> </Link> 
       </div>
     );
   };
